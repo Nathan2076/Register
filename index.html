@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="page">
+    <div id="form">
+        <h2>Cadastro</h2>
+        <br>
+        <form>
+            <div class="double section">
+                <div>
+                    <label for="name">Nome</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Nome Completo" required />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Ex: john.doe@mail.com" required />
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="section">
+                <div>
+                    <label for="phone">Telefone</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" maxlength="11" placeholder="Ex: 43933213635" required />
+                </div>
+                <div>
+                    <label for="birthdate">Data de nascimento</label>
+                    <br>
+                    <input type="date" id="birthdate" name="birthdate" required />
+                </div>
+                <div>
+                    <label for="cpf">CPF</label>
+                    <br>
+                    <input type="tel" id="cpf" name="cpf" maxlength="11" placeholder="Ex: 12345678900" required />
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="section">
+                <div>
+                    <label for="cep">CEP</label>
+                    <br>
+                    <input type="tel" id="cep" name="cep" maxlength="8" placeholder="Ex: 86087000" required />
+                </div>
+                <div>
+                    <label for="address">Endereço</label>
+                    <br>
+                    <input type="text" id="address" name="address" placeholder="Ex: Rua Abílio Justiniano de Queirós" required />
+                </div>
+                <div>
+                    <label for="number">Número</label>
+                    <br>
+                    <input type="number" id="number" name="number" placeholder="Ex: 350" required />
+                </div>
+            </div>
+            <div class="double section">
+                <div>
+                    <label for="complement">Complemento</label>
+                    <br>
+                    <input type="text" id="complement" name="complement" placeholder="Ex: Bloco 1, Apartamento 5" />
+                </div>
+                <div>
+                    <label for="neighborhood">Bairro</label>
+                    <br>
+                    <input type="text" id="neighborhood" name="neighborhood" placeholder="Ex: João Paz" required />
+                </div>
+            </div>
+            <div class="section">
+                <div>
+                    <label for="city">Cidade</label>
+                    <br>
+                    <input type="text" id="city" name="city" placeholder="Ex: Londrina" required />
+                </div>
+                <div>
+                    <label for="state">Estado</label>
+                    <br>
+                    <input type="text" id="state" name="state" placeholder="Ex: PR" required />
+                </div>
+                <div>
+                    <label for="reference">Ponto de referência</label>
+                    <br>
+                    <input type="text" id="reference" name="reference" placeholder="Ex: Próximo do Olympia" />
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="double section">
+                <div>
+                    <label for="password">Senha</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha" required />
+                </div>
+                <div>
+                    <label for="password-confirm">Confirme a senha</label>
+                    <br>
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirme sua senha" required />
+                </div>
+            </div>
+            <br>
+            <button type="submit" onclick="validateForm()">ACESSAR</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
