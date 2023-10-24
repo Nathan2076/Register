@@ -1,7 +1,10 @@
-function validateForm()
+function validateForm(e)
 {
-    let email           = document.getElementById("email").value;
+    e.preventDefault();
+
     let name            = document.getElementById("name").value;
+    let email           = document.getElementById("email").value;
+    let emailConfirm    = document.getElementById("email-confirm").value;
     let phone           = document.getElementById("phone").value;
     let birthdate       = document.getElementById("birthdate").value;
     let cpf             = document.getElementById("cpf").value;
@@ -18,15 +21,19 @@ function validateForm()
 
     if (password != passwordConfirm)
     {
-        alert("A senha confirmada não é a mesma!")
+        alert("A senha confirmada não é a mesma!");
+        return;
     }
-    else
+    if (email != emailConfirm)
     {
-        alert(`Email: ${email}\nNome: ${name}\nTelefone: ${phone}\n`
-            + `Data de nascimento: ${birthdate}\nCPF: ${cpf}\nCEP: ${cep}\n`
-            + `Endereço: ${address}\nNúmero: ${number}\n`
-            + `Complemento: ${complement}\nBairro: ${neighborhood}\n`
-            + `Cidade: ${city}\nEstado: ${state}\n`
-            + `Ponto de referência: ${reference}\nSenha: ${password}`);
+        alert("O email confirmado não é o mesmo!");
+        return;
     }
+    
+    alert(`Nome: ${name}\nEmail: ${email}\nTelefone: ${phone}\n`
+        + `Data de nascimento: ${birthdate}\nCPF: ${cpf}\nCEP: ${cep}\n`
+        + `Endereço: ${address}\nNúmero: ${number}\n`
+        + `Complemento: ${complement}\nBairro: ${neighborhood}\n`
+        + `Cidade: ${city}\nEstado: ${state}\n`
+        + `Ponto de referência: ${reference}\nSenha: ${password}`);
 }

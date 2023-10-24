@@ -13,7 +13,7 @@
     <div id="form">
         <h2>Cadastro</h2>
         <br>
-        <form>
+        <form onsubmit="validateForm(event)">
             <div class="double section">
                 <div>
                     <label for="name">Nome</label>
@@ -24,6 +24,9 @@
                     <label for="email">Email</label>
                     <br>
                     <input type="email" id="email" name="email" placeholder="Ex: john.doe@mail.com" required />
+                    <label for="email-confirm">Confirme o email</label>
+                    <br>
+                    <input type="email" id="email-confirm" name="email-confirm" placeholder="Ex: john.doe@mail.com" required />
                 </div>
             </div>
             <br>
@@ -92,7 +95,7 @@
                 <div>
                     <label for="reference">Ponto de referência</label>
                     <br>
-                    <input type="text" id="reference" name="reference" placeholder="Ex: Próximo do Olympia" />
+                    <input type="text" id="reference" name="reference" placeholder="Ex: Próximo ao Olympia" />
                 </div>
             </div>
             <br>
@@ -111,7 +114,7 @@
                 </div>
             </div>
             <br>
-            <button type="submit" onclick="validateForm()">ACESSAR</button>
+            <button type="submit" onclick="validateForm(event)">ACESSAR</button>
         </form>
     </div>
 </div>
